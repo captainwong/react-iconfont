@@ -1,0 +1,20 @@
+/* eslint-disable */
+/* tslint:disable */
+
+import { SVGAttributes } from 'react';
+import { getIconColor } from './helper';
+
+interface IProps extends Omit<SVGAttributes<SVGElement>, 'color'> {
+  size?: number;
+  color?: string | string[];
+}
+
+export const #Name# = ({ size, color, ...rest }: IProps) => {
+  return (#Content#  );
+};
+
+#Name#.defaultProps = {
+  size: #Size#,
+  color: '#000',
+};
+

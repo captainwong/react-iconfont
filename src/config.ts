@@ -19,6 +19,20 @@ export interface Config {
   dir: string;
 
   /**
+   * Whether to generate App.tsx, main.ts files.
+   * 
+   * @example false
+   */
+  gen_example: boolean;
+
+  /**
+   * The prefix of the icon to remove.
+   * 
+   * @example icon-
+   */
+  trim_prefix: string;
+
+  /**
    * The size unit of the icon.
    * 
    * @example px

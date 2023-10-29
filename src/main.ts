@@ -1,5 +1,5 @@
 import { getConfig } from "./config";
-import { fetchXml } from "./fetch-xml";
+import { fetchMock, fetchXml } from "./fetch-xml";
 import { gen } from "./gen";
 
 const config = getConfig();

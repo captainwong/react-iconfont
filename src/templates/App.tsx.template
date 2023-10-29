@@ -1,0 +1,19 @@
+#imports#
+
+const App: React.FC = () => {
+  return (
+    <table>
+      <thead>
+        <tr>
+          <th>name</th>
+          <th>icon</th>
+        </tr>
+      </thead>
+      <tbody>
+#tr#
+      </tbody>
+    </table>
+  );
+};
+
+export default App;

@@ -1,4 +1,6 @@
 import { parseStringPromise } from 'xml2js';
+import fs from 'fs';
+import path from 'path';
 
 export interface XmlData {
   svg: {
@@ -27,4 +29,9 @@ export const fetchXml = async (url: string): Promise<XmlData> => {
   const [, svg] = matches;
   
   return parseStringPromise(`<svg>${svg}</svg>`) as Promise<XmlData>;
+}
+
+export const fetchMock = async (): Promise<XmlData> => {
+  const text = fs.readFileSync(path.resolve(__dirname, 'svg.html'), 'utf-8');
+  return parseStringPromise(text) as Promise<XmlData>;
 }

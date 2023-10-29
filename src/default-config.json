@@ -1,6 +1,8 @@
 {
-  "url": "https://at.alicdn.com/t/c/font_4305941_r0glzsxda9n.js?spm=a313x.manage_type_myprojects.i1.10.552b3a81NwPhGB&file=font_4305941_r0glzsxda9n.js",
-  "dir": "./src/components/iconfont",
+  "url": "https://at.alicdn.com/t/c/font_4305941_tkxqzpu9mu.js",
+  "trim_prefix": "icon-",
+  "dir": "../react-iconfont-test/src",
+  "gen_example": false,
   "unit": "px",
   "size": 18
 }
