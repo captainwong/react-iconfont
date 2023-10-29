@@ -2,19 +2,19 @@
 /* tslint:disable */
 
 import { SVGAttributes } from 'react';
-import { getIconColor } from './helper';
+import { getIconColor, DEFAULT_STYLE } from './helper';
 
 interface IProps extends Omit<SVGAttributes<SVGElement>, 'color'> {
   size?: number;
   color?: string | string[];
 }
 
-export const #Name# = ({ size, color, ...rest }: IProps) => {
+export const #Name# = ({ size, color, style: _style, ...rest }: IProps) => {
+  const style = _style ? { ...DEFAULT_STYLE, ..._style } : DEFAULT_STYLE;
   return (#Content#  );
 };
 
 #Name#.defaultProps = {
   size: #Size#,
-  color: '#000',
 };
 
